@@ -4,9 +4,8 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: '/ChineseEmperors/',
-  build: {
-    outDir: 'dist',
-    sourcemap: true
-  },
-  publicDir: 'public'
+  server: {
+    port: 3000,
+    host: true
+  }
 })

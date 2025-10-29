@@ -1,127 +1,84 @@
-import React, { useState, useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
-import { loadEmperorData, getEmperorById } from '../utils/dataLoader'
-import { Emperor } from '../types/emperor'
+import { useEmperors } from '../hooks/useEmperors'
 import AchievementTimeline from '../components/AchievementTimeline'
-import './EmperorDetailPage.css'
+import ShareButton from '../components/ShareButton'
+import { getEmperorById } from '../utils/dataUtils'
+import { formatDate } from '../utils/dateUtils'
 
-const EmperorDetailPage: React.FC = () => {
+function EmperorDetailPage() {
   const { id } = useParams<{ id: string }>()
-  const [emperor, setEmperor] = useState<Emperor | null>(null)
-  const [loading, setLoading] = useState(true)
-  const [error, setError] = useState<string | null>(null)
-
-  useEffect(() => {
-    const fetchEmperor = async () => {
-      if (!id) {
-        setError('无效的皇帝ID')
-        setLoading(false)
-        return
-      }
-
-      try {
-        setLoading(true)
-        setError(null)
-        const data = await loadEmperorData()
-        const foundEmperor = getEmperorById(id, data)
-
-        if (foundEmperor) {
-          setEmperor(foundEmperor)
-        } else {
-          setError('未找到该皇帝的信息')
-        }
-      } catch (err) {
-        setError('加载数据失败，请刷新页面重试')
-      } finally {
-        setLoading(false)
-      }
-    }
-
-    fetchEmperor()
-  }, [id])
-
-  const copyShareLink = () => {
-    const url = window.location.href
-    navigator.clipboard.writeText(url).then(() => {
-      alert('链接已复制到剪贴板！')
-    }).catch(() => {
-      alert('复制失败，请手动复制链接')
-    })
-  }
+  const { emperors, loading, error } = useEmperors()
 
   if (loading) {
     return (
-      <div className="loading-container">
-        <div className="loading-spinner"></div>
-        <p>加载中...</p>
+      <div className="container">
+        <div className="loading">加载皇帝数据中...</div>
       </div>
     )
   }
 
-  if (error || !emperor) {
+  if (error) {
     return (
-      <div className="error-container">
-        <h2>错误</h2>
-        <p>{error}</p>
-        <Link to="/" className="back-link">
-          返回首页
-        </Link>
+      <div className="container">
+        <div className="error">错误: {error}</div>
       </div>
     )
   }
+
+  const emperor = getEmperorById(emperors, id || '')
+
+  if (!emperor) {
+    return (
+      <div className="container">
+        <div className="card">
+          <h2>未找到该皇帝</h2>
+          <p>抱歉，没有找到ID为 "{id}" 的皇帝信息。</p>
+          <Link to="/" className="btn">返回首页</Link>
+        </div>
+      </div>
+    )
+  }
+
+  const currentUrl = `${window.location.origin}${window.location.pathname}`
 
   return (
-    <div className="emperor-detail-page">
-      <div className="page-header">
-        <Link to="/" className="back-link">
-          ← 返回首页
-        </Link>
-        <div className="header-actions">
-          <button onClick={copyShareLink} className="share-button">
-            分享链接
-          </button>
-        </div>
-      </div>
-
-      <div className="emperor-profile">
-        <div className="profile-header">
-          <h1 className="emperor-name">{emperor.name}</h1>
-          <div className="emperor-titles">
-            <span className="temple-name">{emperor.temple_name}</span>
-            <span className="dynasty">{emperor.dynasty}朝</span>
+    <div className="container">
+      <div className="card">
+        <div className="detail-header">
+          <h1>{emperor.name} ({emperor.temple_name})</h1>
+          <div className="action-buttons">
+            <Link to="/" className="btn">返回首页</Link>
+            <ShareButton url={currentUrl} title={`${emperor.name} - ${emperor.temple_name}`} />
           </div>
         </div>
 
-        <div className="profile-details">
-          <div className="detail-grid">
-            <div className="detail-item">
-              <label>出生日期</label>
-              <span>{emperor.birth_date}</span>
-            </div>
-            <div className="detail-item">
-              <label>死亡日期</label>
-              <span>{emperor.death_date}</span>
-            </div>
-            <div className="detail-item">
-              <label>享年</label>
-              <span className="death-age">{emperor.death_age} 岁</span>
-            </div>
+        <div className="emperor-info">
+          <div className="info-row">
+            <span className="info-label">朝代：</span>
+            <span className="dynasty-badge">{emperor.dynasty}</span>
+          </div>
+
+          <div className="info-row">
+            <span className="info-label">生卒年份：</span>
+            <span>{formatDate(emperor.birth_date)} - {formatDate(emperor.death_date)}</span>
+          </div>
+
+          <div className="info-row">
+            <span className="info-label">去世年龄：</span>
+            <span className="death-age">{emperor.death_age}岁</span>
+          </div>
+
+          <div className="info-row">
+            <span className="info-label">生平概述：</span>
+            <p className="summary-text">{emperor.summary}</p>
           </div>
         </div>
 
-        <div className="summary-section">
-          <h2>生平概述</h2>
-          <p>{emperor.summary}</p>
-        </div>
-
-        <div className="achievements-section">
-          <h2>成就时间轴</h2>
-          <AchievementTimeline achievements={emperor.achievements} />
-        </div>
+        <AchievementTimeline achievements={emperor.achievements} />
 
         {emperor.sources.length > 0 && (
           <div className="sources-section">
-            <h2>数据来源</h2>
+            <h4>参考资料：</h4>
             <ul className="sources-list">
               {emperor.sources.map((source, index) => (
                 <li key={index}>
@@ -130,7 +87,7 @@ const EmperorDetailPage: React.FC = () => {
                       {source.title}
                     </a>
                   ) : (
-                    <span>{source.title}</span>
+                    source.title
                   )}
                 </li>
               ))}

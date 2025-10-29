@@ -20,7 +20,3 @@ export interface Emperor {
   summary: string;
   sources: Source[];
 }
-
-export interface EmperorData {
-  emperors: Emperor[];
-}
