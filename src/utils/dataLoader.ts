@@ -8,9 +8,7 @@ export async function loadEmperorData(): Promise<EmperorData> {
   }
 
   try {
-    // 在 GitHub Pages 上使用相对路径
-    const basePath = process.env.NODE_ENV === 'production' ? '/ChineseEmperors' : ''
-    const response = await fetch(`${basePath}/data/emperors.json`)
+    const response = await fetch('/data/emperors.json')
     if (!response.ok) {
       throw new Error(`Failed to load data: ${response.status}`)
     }
