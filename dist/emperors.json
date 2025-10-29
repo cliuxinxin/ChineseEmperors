@@ -1,0 +1,125 @@
+[
+  {
+    "id": "tang_taizong",
+    "name": "李世民",
+    "temple_name": "唐太宗",
+    "dynasty": "唐",
+    "birth_date": "598-01-23",
+    "death_date": "649-07-10",
+    "death_age": 51,
+    "achievements": [
+      {"age": 20, "event": "参与玄武门之变，夺取政权"},
+      {"age": 27, "event": "即位为唐太宗"},
+      {"age": 30, "event": "发动征高句丽之战"},
+      {"age": 45, "event": "主持贞观之治，政治清明"}
+    ],
+    "summary": "唐太宗李世民，唐朝第二位皇帝，文治武功兼备，被誉为一代明君。",
+    "sources": [
+      {"title": "旧唐书·太宗本纪", "url": null},
+      {"title": "维基百科", "url": "https://zh.wikipedia.org/wiki/唐太宗"}
+    ]
+  },
+  {
+    "id": "han_wudi",
+    "name": "刘彻",
+    "temple_name": "汉武帝",
+    "dynasty": "西汉",
+    "birth_date": "前156-07-14",
+    "death_date": "前87-03-29",
+    "death_age": 69,
+    "achievements": [
+      {"age": 16, "event": "即位为皇帝"},
+      {"age": 25, "event": "派遣张骞出使西域"},
+      {"age": 30, "event": "开始大规模对匈奴作战"},
+      {"age": 45, "event": "推行盐铁官营政策"},
+      {"age": 60, "event": "颁布轮台罪己诏"}
+    ],
+    "summary": "汉武帝刘彻，西汉第七位皇帝，开创了汉武盛世，奠定了汉朝强盛的基础。",
+    "sources": [
+      {"title": "史记·孝武本纪", "url": null},
+      {"title": "汉书·武帝纪", "url": null}
+    ]
+  },
+  {
+    "id": "song_taizu",
+    "name": "赵匡胤",
+    "temple_name": "宋太祖",
+    "dynasty": "宋",
+    "birth_date": "927-03-21",
+    "death_date": "976-11-14",
+    "death_age": 49,
+    "achievements": [
+      {"age": 33, "event": "发动陈桥兵变，建立宋朝"},
+      {"age": 35, "event": "杯酒释兵权，加强中央集权"},
+      {"age": 40, "event": "统一中原地区"},
+      {"age": 45, "event": "设立枢密院，改革军事制度"}
+    ],
+    "summary": "宋太祖赵匡胤，宋朝开国皇帝，通过兵变建立宋朝，结束了五代十国的混乱局面。",
+    "sources": [
+      {"title": "宋史·太祖本纪", "url": null},
+      {"title": "续资治通鉴长编", "url": null}
+    ]
+  },
+  {
+    "id": "ming_taizu",
+    "name": "朱元璋",
+    "temple_name": "明太祖",
+    "dynasty": "明",
+    "birth_date": "1328-10-21",
+    "death_date": "1398-06-24",
+    "death_age": 70,
+    "achievements": [
+      {"age": 25, "event": "加入红巾军起义"},
+      {"age": 40, "event": "建立明朝，即位为皇帝"},
+      {"age": 45, "event": "废除丞相制度，加强皇权"},
+      {"age": 50, "event": "编纂《大明律》"},
+      {"age": 60, "event": "设立锦衣卫"}
+    ],
+    "summary": "明太祖朱元璋，明朝开国皇帝，从农民起义领袖成为皇帝，建立了明朝。",
+    "sources": [
+      {"title": "明史·太祖本纪", "url": null},
+      {"title": "明实录", "url": null}
+    ]
+  },
+  {
+    "id": "qing_shizu",
+    "name": "福临",
+    "temple_name": "清世祖",
+    "dynasty": "清",
+    "birth_date": "1638-03-15",
+    "death_date": "1661-02-05",
+    "death_age": 23,
+    "achievements": [
+      {"age": 6, "event": "即位为皇帝"},
+      {"age": 7, "event": "清军入关，迁都北京"},
+      {"age": 14, "event": "开始亲政"},
+      {"age": 18, "event": "推行满汉一体政策"}
+    ],
+    "summary": "清世祖福临，清朝第三位皇帝，年号顺治，是清朝入关后的第一位皇帝。",
+    "sources": [
+      {"title": "清史稿·世祖本纪", "url": null},
+      {"title": "清实录", "url": null}
+    ]
+  },
+  {
+    "id": "tang_xuanzong",
+    "name": "李隆基",
+    "temple_name": "唐玄宗",
+    "dynasty": "唐",
+    "birth_date": "685-09-08",
+    "death_date": "762-05-03",
+    "death_age": 77,
+    "achievements": [
+      {"age": 25, "event": "发动唐隆政变，夺取政权"},
+      {"age": 27, "event": "即位为皇帝"},
+      {"age": 35, "event": "开创开元盛世"},
+      {"age": 60, "event": "安史之乱爆发"},
+      {"age": 70, "event": "退位为太上皇"}
+    ],
+    "summary": "唐玄宗李隆基，唐朝第七位皇帝，开创了开元盛世，但晚年遭遇安史之乱。",
+    "sources": [
+      {"title": "旧唐书·玄宗本纪", "url": null},
+      {"title": "新唐书·玄宗本纪", "url": null}
+    ]
+  }
+]
