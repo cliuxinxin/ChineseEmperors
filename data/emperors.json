@@ -1,0 +1,88 @@
+{
+  "emperors": [
+    {
+      "id": "tang_taizong",
+      "name": "李世民",
+      "temple_name": "唐太宗",
+      "dynasty": "唐",
+      "birth_date": "598-01-23",
+      "death_date": "649-07-10",
+      "death_age": 51,
+      "achievements": [
+        {"age": 20, "event": "参与玄武门之变，夺取政权"},
+        {"age": 27, "event": "即位为唐太宗"},
+        {"age": 30, "event": "发动征高句丽之战"},
+        {"age": 45, "event": "主持贞观之治，政治清明"}
+      ],
+      "summary": "唐太宗李世民，唐朝第二位皇帝，文治武功兼备，被誉为一代明君。在位期间开创贞观之治，为唐朝盛世奠定基础。",
+      "sources": [
+        {"title": "旧唐书·太宗本纪", "url": null},
+        {"title": "维基百科", "url": "https://zh.wikipedia.org/wiki/唐太宗"}
+      ]
+    },
+    {
+      "id": "qin_shihuang",
+      "name": "嬴政",
+      "temple_name": "秦始皇",
+      "dynasty": "秦",
+      "birth_date": "-259-02-18",
+      "death_date": "-210-09-10",
+      "death_age": 49,
+      "achievements": [
+        {"age": 13, "event": "继承秦王位"},
+        {"age": 22, "event": "亲政，开始统一六国"},
+        {"age": 39, "event": "完成统一大业，建立秦朝"},
+        {"age": 40, "event": "称始皇帝，统一度量衡、文字、货币"},
+        {"age": 42, "event": "修建万里长城"}
+      ],
+      "summary": "秦始皇嬴政，中国历史上第一个使用皇帝称号的君主，统一六国，建立秦朝，对中国历史产生深远影响。",
+      "sources": [
+        {"title": "史记·秦始皇本纪", "url": null},
+        {"title": "维基百科", "url": "https://zh.wikipedia.org/wiki/秦始皇"}
+      ]
+    },
+    {
+      "id": "wu_zetian",
+      "name": "武曌",
+      "temple_name": "武则天",
+      "dynasty": "周",
+      "birth_date": "624-02-17",
+      "death_date": "705-12-16",
+      "death_age": 81,
+      "achievements": [
+        {"age": 14, "event": "入宫为唐太宗才人"},
+        {"age": 26, "event": "成为唐高宗皇后"},
+        {"age": 60, "event": "称帝，建立武周"},
+        {"age": 67, "event": "开创科举殿试制度"},
+        {"age": 75, "event": "还政于唐"}
+      ],
+      "summary": "武则天，中国历史上唯一得到普遍承认的女皇帝。在位期间开创殿试制度，重视农业发展，巩固边疆。",
+      "sources": [
+        {"title": "旧唐书·则天皇后本纪", "url": null},
+        {"title": "维基百科", "url": "https://zh.wikipedia.org/wiki/武则天"}
+      ]
+    },
+    {
+      "id": "kangxi",
+      "name": "玄烨",
+      "temple_name": "康熙帝",
+      "dynasty": "清",
+      "birth_date": "1654-05-04",
+      "death_date": "1722-12-20",
+      "death_age": 68,
+      "achievements": [
+        {"age": 8, "event": "即位为清朝皇帝"},
+        {"age": 14, "event": "亲政，开始实际掌权"},
+        {"age": 20, "event": "平定三藩之乱"},
+        {"age": 29, "event": "收复台湾"},
+        {"age": 35, "event": "击退准噶尔入侵"},
+        {"age": 47, "event": "签订尼布楚条约"}
+      ],
+      "summary": "康熙帝玄烨，清朝第四位皇帝，中国历史上在位时间最长的皇帝。开创康乾盛世，统一台湾，维护国家统一。",
+      "sources": [
+        {"title": "清史稿·圣祖本纪", "url": null},
+        {"title": "维基百科", "url": "https://zh.wikipedia.org/wiki/康熙帝"}
+      ]
+    }
+  ]
+}
