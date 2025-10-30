@@ -1,0 +1,148 @@
+[
+  {
+    "id": "tang_taizong",
+    "name": "李世民",
+    "temple_name": "唐太宗",
+    "dynasty": "唐",
+    "birth_date": "598-01-23",
+    "death_date": "649-07-10",
+    "death_age": 51,
+    "achievements": [
+      {"age": 20, "event": "参与玄武门之变，夺取政权"},
+      {"age": 28, "event": "即位为皇帝（贞观年间开始）"},
+      {"age": 45, "event": "实施贞观之治，政治清明"}
+    ],
+    "summary": "唐太宗李世民，一代明君，重用贤臣，文治武功皆著。",
+    "sources": [{"title":"旧唐书·太宗本纪","url":null},{"title":"维基百科","url":"https://zh.wikipedia.org/wiki/唐太宗"}]
+  },
+  {
+    "id": "ming_zhengde",
+    "name": "朱厚照",
+    "temple_name": "明武宗",
+    "dynasty": "明",
+    "birth_date": "1491-08-09",
+    "death_date": "1521-09-05",
+    "death_age": 30,
+    "achievements": [
+      {"age": 15, "event": "继承皇位，史称‘正德’年间’"}
+    ],
+    "summary": "明武宗正德皇帝，任性游乐，政务多由近臣代为处理。",
+    "sources": [{"title":"明史·本纪","url":null}]
+  },
+  {
+    "id": "qing_kangxi",
+    "name": "玄烨",
+    "temple_name": "清圣祖（康熙）",
+    "dynasty": "清",
+    "birth_date": "1654-05-04",
+    "death_date": "1722-12-20",
+    "death_age": 68,
+    "achievements": [
+      {"age": 8, "event": "即位（康熙年号开始）"},
+      {"age": 31, "event": "平定三藩之乱，稳固清朝统治"},
+      {"age": 48, "event": "推动文治与科学文化交流"}
+    ],
+    "summary": "康熙帝在位时间长，开明且有远见，对清初稳定与发展影响深远。",
+    "sources": [{"title":"清史稿","url":null}]
+  },
+  {
+    "id": "han_gaozu",
+    "name": "刘邦",
+    "temple_name": "汉高祖",
+    "dynasty": "汉",
+    "birth_date": "256-01-01",
+    "death_date": "195-06-01",
+    "death_age": 61,
+    "achievements": [
+      {"age": 40, "event": "起兵反秦，建立汉朝"},
+      {"age": 47, "event": "定都长安/洛阳，完成天下统一"}
+    ],
+    "summary": "汉朝开国皇帝，出身平民，善用谋略与人心。",
+    "sources": [{"title":"史记·高祖本纪","url":null}]
+  },
+  {
+    "id": "sui_wendi",
+    "name": "杨坚",
+    "temple_name": "隋文帝",
+    "dynasty": "隋",
+    "birth_date": "541-11-01",
+    "death_date": "604-08-13",
+    "death_age": 62,
+    "achievements": [
+      {"age": 60, "event": "建立隋朝，结束南北对峙"}
+    ],
+    "summary": "隋文帝完成隋朝统一南北的历史任务，为隋唐盛世奠定基础。",
+    "sources": [{"title":"隋书","url":null}]
+  },
+  {
+    "id": "song_taizu",
+    "name": "赵匡胤",
+    "temple_name": "宋太祖",
+    "dynasty": "宋",
+    "birth_date": "927-03-21",
+    "death_date": "976-11-14",
+    "death_age": 49,
+    "achievements": [
+      {"age": 49, "event": "陈桥兵变，黄袍加身，建立宋朝"}
+    ],
+    "summary": "宋太祖以文治为本，终结五代十国的分裂局面。",
+    "sources": [{"title":"宋史","url":null}]
+  },
+  {
+    "id": "yuan_kublai",
+    "name": "忽必烈",
+    "temple_name": "元世祖",
+    "dynasty": "元",
+    "birth_date": "1215-09-23",
+    "death_date": "1294-02-18",
+    "death_age": 78,
+    "achievements": [
+      {"age": 60, "event": "建立元朝，定都大都"}
+    ],
+    "summary": "忽必烈完成由蒙古帝国向中国中央政权的转化。",
+    "sources": [{"title":"元史","url":null}]
+  },
+  {
+    "id": "jin_wang",
+    "name": "完颜晟",
+    "temple_name": "金章宗",
+    "dynasty": "金",
+    "birth_date": "1168-01-01",
+    "death_date": "1209-10-01",
+    "death_age": 41,
+    "achievements": [
+      {"age": 40, "event": "在位期间加强中央集权"}
+    ],
+    "summary": "金章宗在位期间推动政务改革，维持北方政权稳定。",
+    "sources": [{"title":"金史","url":null}]
+  },
+  {
+    "id": "zhou_zhouxu",
+    "name": "周世宗",
+    "temple_name": "周世宗",
+    "dynasty": "周（五代）",
+    "birth_date": "902-05-01",
+    "death_date": "954-10-12",
+    "death_age": 52,
+    "achievements": [
+      {"age": 48, "event": "恢复中原部分领土，短暂统一局势"}
+    ],
+    "summary": "五代时期重要割据势力首领之一，功业有限但影响显著。",
+    "sources": [{"title":"旧五代史","url":null}]
+  },
+  {
+    "id": "qin_shihuang",
+    "name": "嬴政",
+    "temple_name": "秦始皇",
+    "dynasty": "秦",
+    "birth_date": "259-02-07",
+    "death_date": "210-09-10",
+    "death_age": 49,
+    "achievements": [
+      {"age": 38, "event": "完成六国一统，成为中国第一位皇帝"},
+      {"age": 43, "event": "启动统一度量衡与书同文政策"}
+    ],
+    "summary": "中国首位称皇帝者，统一度量衡与文字改革影响深远。",
+    "sources": [{"title":"史记·秦始皇本纪","url":null}]
+  }
+]

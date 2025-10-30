@@ -1,0 +1,8 @@
+body{font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;line-height:1.6;margin:0;padding:0}
+.container{max-width:900px;margin:2rem auto;padding:0 1rem}
+header h1{margin:0 0 .2rem}
+.search{display:flex;gap:.5rem;margin:1rem 0}
+.search input{flex:1;padding:.6rem;font-size:1rem}
+.search button{padding:.6rem 1rem}
+.card{border:1px solid #eee;padding:1rem;margin-bottom:1rem;border-radius:6px}
+footer{margin-top:2rem;color:#666}

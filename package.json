@@ -1,35 +1,21 @@
 {
   "name": "chineseemperors",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "npm run validate-data && tsc && vite build",
+    "build": "vite build",
     "preview": "vite preview",
-    "validate-data": "node scripts/validateData.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "vite",
+    "deploy": "gh-pages -d dist"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cliuxinxin/ChineseEmperors.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/cliuxinxin/ChineseEmperors/issues"
-  },
-  "homepage": "https://github.com/cliuxinxin/ChineseEmperors#readme",
-  "description": "",
   "dependencies": {
-    "@types/node": "^24.9.2",
-    "@types/react": "^19.2.2",
-    "@types/react-dom": "^19.2.2",
-    "@vitejs/plugin-react": "^5.1.0",
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0",
-    "react-router-dom": "^7.9.5",
-    "typescript": "^5.9.3",
-    "vite": "^7.1.12"
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-router-dom": "6.14.1"
+  },
+  "devDependencies": {
+    "vite": "5.0.0",
+    "gh-pages": "5.0.0"
   }
 }
